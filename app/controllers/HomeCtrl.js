@@ -7,6 +7,9 @@ myApp.controller('HomeCtrl', ["$scope", function($scope) {
 				FB.api('/me', function(response) {
 					console.log('Good to see you, ' + response.name + '.');
 					console.log(response);
+
+					var accessToken = FB.getAuthResponse();
+					console.log(accessToken);
 				});
 			}
 			else {
