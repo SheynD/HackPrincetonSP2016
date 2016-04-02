@@ -26,18 +26,18 @@
       <file leaf-file-name="topHeaderToolbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.235294">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state vertical-scroll-proportion="-0.5882353">
+              <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/login/login.js">
+      <file leaf-file-name="topHeaderToolbar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -53,21 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/mainMenu/mainMenu.js">
+      <file leaf-file-name="tiles.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/json/tiles.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.73913044">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/login/login.html">
+      <file leaf-file-name="mainMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/mainMenu/mainMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.6296296">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51086956">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.2916665">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -120,8 +120,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3137255">
-              <caret line="1008" column="29" selection-start-line="1008" selection-start-column="29" selection-end-line="1008" selection-end-column="29" />
+            <state vertical-scroll-proportion="-2.8235295">
+              <caret line="217" column="10" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -145,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/json/tiles.json" />
         <option value="$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.js" />
         <option value="$PROJECT_DIR$/assets/profile/profile.json" />
         <option value="$PROJECT_DIR$/assets/filmSearch/filmSearch.html" />
@@ -153,12 +152,13 @@
         <option value="$PROJECT_DIR$/assets/mainMenu/mainMenu.html" />
         <option value="$PROJECT_DIR$/assets/login/login.js" />
         <option value="$PROJECT_DIR$/assets/js/routing.js" />
-        <option value="$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.html" />
         <option value="$PROJECT_DIR$/assets/mainMenu/mainMenu.js" />
         <option value="$PROJECT_DIR$/assets/profile/profile.js" />
         <option value="$PROJECT_DIR$/assets/profile/profile.html" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.html" />
+        <option value="$PROJECT_DIR$/assets/json/tiles.json" />
       </list>
     </option>
   </component>
@@ -1128,12 +1128,12 @@
       <created>1459564708627</created>
       <option name="number" value="Default" />
       <updated>1459564708627</updated>
-      <workItem from="1459564715003" duration="25917000" />
+      <workItem from="1459564715003" duration="27027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25917000" />
+    <option name="totallyTimeSpent" value="27027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1225,14 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/tiles.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/filmSearch/filmSearch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.4444447">
@@ -1261,14 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46487603">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1285,6 +1269,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8235295">
+          <caret line="217" column="10" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/profile/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.444445">
@@ -1295,18 +1287,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/profile/profile.json">
+    <entry file="file://$PROJECT_DIR$/assets/mainMenu/mainMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        <state vertical-scroll-proportion="-5.6296296">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mainMenu/mainMenu.js">
+    <entry file="file://$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1319,11 +1311,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.235294">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="-7.2916665">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,21 +1329,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assets/topHeaderToolbar/topHeaderToolbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3137255">
-          <caret line="1008" column="29" selection-start-line="1008" selection-start-column="29" selection-end-line="1008" selection-end-column="29" />
+        <state vertical-scroll-proportion="-0.5882353">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/profile/profile.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51086956">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.625">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/json/tiles.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73913044">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

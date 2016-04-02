@@ -1,25 +1,25 @@
 {
   "icons": [
     {
-      "name": "New Films",
+      "name": "Search Movies",
       "state": "transmissions",
       "icon": "fa fa-plane",
       "id": "tileOne"
     },
     {
-      "name": "Film Search",
+      "name": "Friends",
       "state": "filmSearch",
       "icon": "fa fa-search",
       "id": "tileTwo"
     },
     {
-      "name": "Authorization",
+      "name": "Wishlist",
       "state": "authorization",
       "icon": "fa fa-lock",
       "id": "tileThree"
     },
     {
-      "name": "Admin",
+      "name": "Watched Movies",
       "state": "admin",
       "icon": "fa fa-cogs",
       "id": "tileFour"
@@ -29,12 +29,6 @@
       "state": "inquiry",
       "icon": "fa fa-pencil-square-o",
       "id": "tileFive"
-    },
-    {
-      "name": "Reports",
-      "state": "reports",
-      "icon": "fa fa-file",
-      "id": "tileSix"
     }
   ]
 }
