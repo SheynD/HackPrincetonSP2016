@@ -11,5 +11,14 @@
 	background-repeat:no-repeat;
     background-position:fixed; 
 	display: compact;
+}
+
+.title-text {
+	color:#ffffff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.subtitle-text {
+	color:#ffffff;
 	font-family: 'Josefin Sans', sans-serif;
 }
