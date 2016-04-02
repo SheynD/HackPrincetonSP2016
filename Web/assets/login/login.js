@@ -31,6 +31,7 @@
 
                         var accessToken = FB.getAuthResponse();
                         console.log(accessToken);
+                        window.location = '../Web/mainMenu#/mainMenu';
                     });
                 }
                 else {

@@ -1,0 +1,15 @@
+.logo {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	height: 100px
+}
+
+.login {
+	background-image: url(../images/cameraBackground.jpg);
+	background-size: 1300px 1000px;
+	background-repeat:no-repeat;
+    background-position:fixed; 
+	display: compact;
+	font-family: 'Josefin Sans', sans-serif;
+}

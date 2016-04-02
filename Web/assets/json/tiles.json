@@ -7,9 +7,9 @@
       "id": "tileOne"
     },
     {
-      "name": "Film Example",
-      "state": "ruleManager",
-      "icon": "fa fa-shield",
+      "name": "Film Search",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
       "id": "tileTwo"
     },
     {
