@@ -5,11 +5,32 @@
     <title>Title</title>
 </head>
 <body>
-<div class="container">
+<div class="container" style="margin-top: 50px">
 <div class="jumbotron">
-  <div class="container">
-    <h1 class="title-text">FILM SEARCH</h1>
-  </div>
+  <h1 class="subtitle-text"> Film Search </h1>
+    	<form>
+    		<div class="input-group">
+  				<span class="input-group-addon glyphicon glyphicon-search" id="searchInput" aria-hidden="true"></span>
+  				<input type="text" class="form-control" placeholder="Search" aria-describedby="searchInput">
+			</div>
+  			<div class="checkbox">
+    		<label class="radio-inline">
+  				<input type="radio" name="searchOptions" id="searchRadio1" value="title"> Title
+			</label>
+			<label class="radio-inline">
+  				<input type="radio" name="searchOptions" id="searchRadio2" value="actor"> Actor
+			</label>
+			<label class="radio-inline">
+  				<input type="radio" name="searchOptions" id="searchRadio3" value="director"> Director
+			</label>
+			<label class="radio-inline">
+  				<input type="radio" name="searchOptions" id="searchRadio3" value="genre"> Genre
+			</label>
+			<label class="radio-inline">
+  				<input type="radio" name="searchOptions" id="searchRadio3" value="production"> Production
+			</label>
+  		</div>
+  		</form>
 </div>
 </div>
 </body>

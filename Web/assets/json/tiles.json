@@ -1,15 +1,15 @@
 {
   "icons": [
     {
-      "name": "Search Movies",
-      "state": "transmissions",
-      "icon": "fa fa-plane",
+      "name": "Search Films",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
       "id": "tileOne"
     },
     {
       "name": "Friends",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
+      "state": "friends",
+      "icon": "fa fa-plane",
       "id": "tileTwo"
     },
     {
