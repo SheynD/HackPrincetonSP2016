@@ -10,7 +10,7 @@
 
     function configureRouterApp($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/mainMenu');
+        $urlRouterProvider.otherwise('/login');
 
         $stateProvider
 
@@ -41,6 +41,7 @@
                 controller: 'Login',
                 controllerAs: 'login'
             })
+
 
     }
 })();
