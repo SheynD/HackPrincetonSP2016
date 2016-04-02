@@ -27,6 +27,18 @@
             }
         );
 
+        UserService.getData('assets/profile/profile.json').then(
+            function(resolve){
+                //success
+                vm.profile = resolve.profile[0];
+                console.log("loaded profile picture");
+            },
+            function(reject){
+                //failure
+                console.log("Failed to load tile icons :(");
+            }
+        );
+
         vm.hideTiles = function (id) {
 
             //If the given ID does not match one of the existing ID's, hide that element.

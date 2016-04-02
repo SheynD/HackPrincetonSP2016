@@ -13,25 +13,25 @@
       "id": "tileTwo"
     },
     {
-      "name": "Cool Film",
+      "name": "Authorization",
       "state": "authorization",
       "icon": "fa fa-lock",
       "id": "tileThree"
     },
     {
-      "name": "Uncool Film",
+      "name": "Admin",
       "state": "admin",
       "icon": "fa fa-cogs",
       "id": "tileFour"
     },
     {
-      "name": "Your Films",
+      "name": "Inquiry",
       "state": "inquiry",
       "icon": "fa fa-pencil-square-o",
       "id": "tileFive"
     },
     {
-      "name": "Test",
+      "name": "Reports",
       "state": "reports",
       "icon": "fa fa-file",
       "id": "tileSix"

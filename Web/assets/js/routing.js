@@ -21,6 +21,27 @@
                 controllerAs: 'mainMenu'
             })
 
+            .state('userProfile', {
+                url: '/profile',
+                templateUrl: 'assets/profile/profile.html',
+                controller: 'Profile',
+                controllerAs: 'profile'
+            })
+
+            .state('filmSearch', {
+                url: '/filmSearch',
+                templateUrl: 'assets/filmSearch/filmSearch.html',
+                controller: 'FilmSearch',
+                controllerAs: 'filmSearch'
+            })
+
+            .state('loginPage', {
+                url: '/login',
+                templateUrl: 'assets/login/login.html',
+                controller: 'Login',
+                controllerAs: 'login'
+            })
+
     }
 })();
 

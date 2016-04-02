@@ -1,4 +1,15 @@
 <div id="toolbarContainer">
-            <div id="toolbarIcon" ng-click="mainMenu.animateState('mainMenu', 'activePage', 'routingAnimationOut', 300)"><i class="fa fa-arrow-left [&#xf05c;]"></i></div>
-            <div id="toolbarText"><span>Welcome to (Insert name here that is actually decent)</span></div>
+    <div id="toolbarIcon" ng-if="onMain"
+         ng-click="mainMenu.animateState('mainMenu', 'activePage', 'routingAnimationOut', 300)"><i
+            class="fa fa-arrow-left [&#xf05c;]"></i></div>
+    <div id="toolbarText">
+        <div class="profileIcon"><img src="{{mainMenu.profile.profilePicture}}" class="profileIcon" ng-click="mainMenu.animateState('userProfile', 'toolbarContainer', 'hideTile', 0);"
+                                      alt="{{profile.name}}"></div>
+
+    </div>
+    <div class="filmHackTitle">
+    <span class="filmHackTitleContainer">Hello {{mainMenu.profile.name}}, Welcome to FilmHack</span>
+    </div>
 </div>
+
+<!--<i class="fa fa-user"></i>-->
