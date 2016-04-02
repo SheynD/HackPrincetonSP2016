@@ -1,0 +1,951 @@
+/*THE FOLLOWING IS FOR CROSS BROWSER COMPATIBILITY*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+div:focus, textarea:focus {
+    outline: none;
+    border: 0;
+}
+
+/* DOM wide styles in here */
+
+html {
+    font-family: Roboto;
+    -webkit-font-smoothing: antialiased;
+    background-color: #E8F5E9;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #E8F5E9;
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #388e3c;
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #E8F5E9
+}
+
+tr:focus {
+    outline: 0;
+    border: none;
+}
+
+h2 {
+    color: white;
+    margin-top: 19px;
+    margin-left: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    opacity: 0.4;
+}
+
+li {
+    height: 25px;
+}
+
+/*For table row selection background-color MUST be important to override tr defaults*/
+.emptyRow{
+
+}
+
+.selectedRow{
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: #448AFF !important;
+}
+
+#selectedRow{
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: #448AFF !important;
+}
+
+/* Prevent the page from scrolling temporarily, used for popContent Boxes*/
+
+.overflowOff {
+    font-family: Roboto;
+    -webkit-font-smoothing: antialiased;
+    background-color: #E8F5E9;
+    overflow: hidden;
+}
+
+.overflowOn {
+    font-family: Roboto;
+    -webkit-font-smoothing: antialiased;
+    background-color: #E8F5E9;
+}
+
+/* This stuff needs to be organized, everything should be re-usable and easily identifiable */
+
+.twoColor {
+    background-color: #a5d6a7;
+}
+.fiveColor {
+    background-color: #4caf50;
+}
+.sixColor{
+    background-color: #43a047;
+}
+.sevenColor {
+    background-color: #388e3c;
+}
+.nineColor {
+    background-color: #1b5e20;
+}
+
+.mainMenuContainer {
+    padding-top: 100px;
+    z-index: 2;
+}
+
+#contentContainer {
+
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+
+    margin: 0 auto;
+    background-color: transparent;
+    width: 80%;
+    max-width: 1000px;
+    height: 100%;
+}
+
+#toolbarContainer {
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    height: 60px;
+    width: 100%;
+
+    background-color: #388E3C;
+    font-size: 30px;
+    color: #E8F5E9;
+
+    align-items: center;
+
+    -webkit-box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.86);
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.86);
+}
+
+#toolbarText {
+    margin-left: 40px;
+}
+
+#toolbarIcon {
+    display: flex;
+
+    height: 100%;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #215524;
+}
+
+#topToolbarText {
+    font-size: 15px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#routingContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.transactionButton {
+    display: flex;
+    align-content: center;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: 0px;
+    padding-top: 10px;
+    background-color: #1B5E20 !important;
+    color: white !important; /*needs to be important because angular material overrides it. (eventually just make a custom button...)*/
+
+    -moz-animation: all .6s ease-in-out 0s forwards;
+    -webkit-animation: all .6s ease-in-out 0s forwards;
+    -o-animation: all .6s ease-in-out 0s forwards;
+    animation: all .6s ease-in-out 0s forwards;
+}
+
+/* This should all be stuff specific to the inquiry page of the app */
+
+.inquiryTitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: 20px;
+    width: 100%;
+    height: 31px;
+    background-color: #1b5e20;
+    color: white;
+}
+
+.inquiryContentBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #e8f5e9;
+    height: 575px;
+    flex-direction: row;
+}
+
+.inquiryTitleBoxText {
+    width: 33%;
+    color: #d7e8d8;
+    display: flex;
+    justify-content: center;
+}
+
+.inquiryItemsTable{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.inquiryItemsContent{
+    background-color: white;
+    color: black;
+}
+
+.inquiryItemsContentHeader{
+    text-align: center;
+}
+
+.inquiryHeader{
+    margin-top: 29px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.inquiryContentBoxYtd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 520px;
+    background-color: white;
+    margin: 20px;
+}
+
+.inquiryContentBoxMtd {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 250px;
+    background-color: white;
+    margin: 18px;
+    margin-top: 0px;
+}
+
+.inquiryContentCol {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.inquiryContentColLeft {
+    width: 40%;
+}
+
+.inquiryContentColRight {
+    width: 60%;
+}
+
+.inquiryContentBoxLoan {
+    width: 95%;
+    height: 600px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+
+}
+
+.inquiryLoanContent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+.inquiryContentHeaders {
+    height: 20px;
+    font-size: 15px;
+}
+
+.inquirySearchBar {
+    position: fixed;
+    width: 150px;
+    z-index: 10;
+    top: 20px;
+    right: 150px;
+    font-size: 14px;
+}
+
+.inquiryTableContainer {
+    display: flex;
+    margin-top: 15px;
+    width: 200px;
+}
+
+.inquiryTables {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.inquiryContainer {
+    background-color: white;
+}
+
+.inquiryDebitCreditTitle{
+width: 100px;
+    height: 20px;
+    background-color: #0000BB;
+}
+
+.summaryText {
+    font-size: 30px;
+    opacity: 1;
+}
+
+.summaryLine {
+    width: 100%;
+    margin-top: 5px;
+    height: 2px;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.transactionTable {
+    width: 100%;
+    height: 100%;
+}
+
+.tableContainerHack {
+    width: 100%;
+    height: 100%;
+}
+
+.transmissionsTabs {
+    font-size: 18px;
+    margin-top: 100px;
+    width: 95%;
+    max-width: 1000px;
+    -webkit-box-shadow: 11px 10px 33px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 10px 33px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px 10px 33px -10px rgba(0, 0, 0, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.routingAnimation {
+    position: relative;
+    left: -1500px;
+
+
+    -moz-animation: transmissionsIn .6s ease-in-out 0s forwards;
+    -webkit-animation: transmissionsIn .6s ease-in-out 0s forwards;
+    -o-animation: transmissionsIn .6s ease-in-out 0s forwards;
+    animation: transmissionsIn .6s ease-in-out 0s forwards;
+}
+
+.routingAnimationOut {
+    position: relative;
+    left: 0px;
+
+    -moz-animation: transmissionsIn .3s ease-in-out 0s reverse;
+    -webkit-animation: transmissionsIn .3s ease-in-out 0s reverse;
+    -o-animation: transmissionsIn .3s ease-in-out 0s reverse;
+    animation: transmissionsOut .3s ease-out 0s;
+}
+
+/* mainMenu CSS should go here */
+
+.tile {
+    position: relative;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: #388E3C;
+    height: 210px;
+    width: 300px;
+    margin-left: 15px;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-size: 104px;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.tileIcon {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 27px;
+    color: #E8F5E9;
+    opacity: 0.7;
+}
+
+.tileImage {
+    width: 37%;
+    /*opacity: 0.4;*/
+    fill: white;
+
+}
+
+.tileText {
+    position: absolute;
+    display: flex;
+    height: 15%;
+    background-color: black;
+    opacity: .4;
+    color: white;
+    text-align: right;
+    font-size: 19px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+}
+
+.tile:hover {
+    font-size: 110px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.20), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.tileOne {
+    z-index: 1;
+    -moz-animation: example .3s ease-in-out 0s forwards;
+    -webkit-animation: example .3s ease-in-out 0s forwards;
+    -o-animation: example .3s ease-in-out 0s forwards;
+    animation: example .3s ease-in-out 0s forwards;
+}
+
+.tileTwo {
+    z-index: 1;
+    -moz-animation: example .3s ease-in-out .1s forwards;
+    -webkit-animation: example .3s ease-in-out .1s forwards;
+    -o-animation: example .3s ease-in-out .1s forwards;
+    animation: example .3s ease-in-out .1s forwards;
+}
+
+.tileThree {
+    z-index: 1;
+    -moz-animation: example .3s ease-in-out .2s forwards;
+    -webkit-animation: example .3s ease-in-out .2s forwards;
+    -o-animation: example .3s ease-in-out .2s forwards;
+    animation: example .3s ease-in-out .2s forwards;
+}
+
+.tileFour {
+    z-index: 1;
+    -moz-animation: example .3s ease-in-out .3s forwards;
+    -webkit-animation: example .3s ease-in-out .3s forwards;
+    -o-animation: example .3s ease-in-out .3s forwards;
+    animation: example .3s ease-in-out .3s forwards;
+}
+
+.tileFive {
+    z-index: 1;
+    -moz-animation: example .3s ease-in-out .4s forwards;
+    -webkit-animation: example .3s ease-in-out .4s forwards;
+    -o-animation: example .3s ease-in-out .4s forwards;
+    animation: example .3s ease-in-out .4s forwards;
+}
+
+.tileSix {
+    z-index: 1;
+    -moz-animation: example .3s ease-in-out .5s forwards;
+    -webkit-animation: example .3s ease-in-out .5s forwards;
+    -o-animation: example .3s ease-in-out .5s forwards;
+    animation: example .3s ease-in-out .5s forwards;
+}
+
+.hideTile {
+
+    display: none;
+
+    animation-fill-mode: forwards;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+@-webkit-keyframes example {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes example {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} /*TODO: Rename this to something that makes sense...*/
+
+@-moz-keyframes example {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tileOut {
+    0% {
+        opacity: 1;
+        height: 210px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes tileOut {
+    0% {
+        opacity: 1;
+        height: 210px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes tileOut {
+    0% {
+        opacity: 1;
+        height: 210px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes tileOut {
+    0% {
+
+        right: 0%;
+        opacity: 1;
+        font-size: 110px;
+        height: 210px;
+        background-color: #388E3C;
+        width: 300px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    60% {
+
+        opacity: 1;
+        font-size: 300px;
+        background-color: #388E3C;
+        height: 420px;
+        width: 100%;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
+        right: 0%;
+    }
+    100% {
+
+        opacity: 1;
+        font-size: 300px;
+        background-color: #388E3C;
+        height: 420px;
+        width: 100%;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
+        right: -200%;
+    }
+}
+
+.tileOut {
+
+    z-index: 2;
+
+    animation-fill-mode: forwards;
+
+    -moz-animation: tileOut .6s ease-in-out 0s forwards;
+    -webkit-animation: tileOut .6s ease-in-out 0s forwards;
+    -o-animation: tileOut .6s ease-in-out 0s forwards;
+    animation: tileOut .6s ease-in-out 0s forwards;
+}
+
+/*Transmissions CSS here*/
+
+@-webkit-keyframes transmissionsIn {
+    0% {
+        left: -1500px;
+    }
+    100% {
+
+        left: 0px;
+    }
+}
+
+@-o-keyframes transmissionsIn {
+    0% {
+        left: -1500px;
+    }
+    100% {
+
+        left: 0px;
+    }
+}
+
+@-moz-keyframes transmissionsIn {
+    0% {
+        left: -1500px;
+    }
+    100% {
+
+        left: 0px;
+    }
+}
+
+@keyframes transmissionsIn {
+    0% {
+        left: -1500px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes transmissionsOut {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1500px;
+    }
+}
+
+/* Under construction entries */
+
+#underConstruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    opacity: 1;
+    background-color: white;
+    font-size: 80px;
+    width: 100%;
+    height: 200px;
+}
+
+.constructionText {
+    opacity: .4;
+    font-size: 100px;
+}
+
+/*Pop Up Container Entries*/
+
+.popHide {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    animation: popHideIn .3s ease-out 0s;
+}
+
+.popHideOut {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    animation: popHideOut .3s ease-out 0s;
+
+    opacity: 0;
+}
+
+.popHideEscape {
+
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: -15px;
+    z-index: 101;
+    background-color: transparent;
+    color: #DD2C00;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+
+    right: 0px;
+    top: 0px;
+
+    animation: popHideEscapeIn .3s ease-out 0s;
+}
+
+.popHideEscapeOut {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: -15px;
+    z-index: 101;
+    background-color: transparent;
+    color: #DD2C00;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+
+    right: 0px;
+    top: 0px;
+
+    animation: popHideEscapeOut .3s ease-out 0s;
+}
+
+.popEmpty {
+    /*Hides elements when they are not needed, works but I don't REALLY understand why.*/
+    opacity: 0;
+    position: absolute;
+    right: -999em;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+}
+
+.popContents {
+    margin-top: 50px;
+    position: relative;
+    width: 855px;
+    opacity: 1;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    height: 700px;
+    top: 0;
+
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+
+
+    animation: popContentsIn .3s ease-out 0s;
+}
+
+.popContentsHack {
+    margin-top: 50px;
+    position: relative;
+    width: 76%;
+    opacity: 1;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    height: 700px;
+    top: 0;
+
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.popContentsOut {
+
+    margin-top: 50px;
+    position: relative;
+    width: 75%;
+    opacity: 1;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    height: 700px;
+    top: 0;
+
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+
+
+    animation: popContentsOut .3s ease-out 0s;
+}
+
+.popContainer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+@keyframes popHideIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popContentsIn {
+    0% {
+        width: 0%;
+        height: 0px;
+    }
+    25% {
+        width: 0%;
+        height: 0px;
+    }
+    100% {
+        width: 75%;
+        height: 700px;
+    }
+}
+
+@keyframes popContentsOut {
+    0% {
+        width: 75%;
+        height: 700px;
+    }
+    100% {
+        width: 0%;
+        height: 0px;
+    }
+}
+
+@keyframes popHideOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes popHideEscapeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popHideEscapeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*Universal entries should go here, this should save a LOT of time*/
+
+.uniMdContent {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 15px;
+}

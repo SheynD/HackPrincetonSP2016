@@ -1,0 +1,40 @@
+{
+  "icons": [
+    {
+      "name": "New Films",
+      "state": "transmissions",
+      "icon": "fa fa-plane",
+      "id": "tileOne"
+    },
+    {
+      "name": "Film Example",
+      "state": "ruleManager",
+      "icon": "fa fa-shield",
+      "id": "tileTwo"
+    },
+    {
+      "name": "Cool Film",
+      "state": "authorization",
+      "icon": "fa fa-lock",
+      "id": "tileThree"
+    },
+    {
+      "name": "Uncool Film",
+      "state": "admin",
+      "icon": "fa fa-cogs",
+      "id": "tileFour"
+    },
+    {
+      "name": "Your Films",
+      "state": "inquiry",
+      "icon": "fa fa-pencil-square-o",
+      "id": "tileFive"
+    },
+    {
+      "name": "Test",
+      "state": "reports",
+      "icon": "fa fa-file",
+      "id": "tileSix"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<top-data-entry></top-data-entry>
+
+<div id="firstRow" class="mainMenuContainer">
+
+        <div id="full">
+            <div id="contentContainer">
+
+                <div class="tile {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in mainMenu.tiles" ng-click="mainMenu.animateState(tile.state, tile.id, 'tileOut', 600); mainMenu.hideTiles(tile.id);">
+                    <div class="tileIcon">
+
+                        <i class="{{tile.icon}}"></i>
+                    </div>
+                    <div class="tileText">
+                        <p>{{tile.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+</body>
+</html>
