@@ -27,6 +27,8 @@
             }
         );
 
+
+
         vm.hideTiles = function (id) {
 
             //If the given ID does not match one of the existing ID's, hide that element.
@@ -41,6 +43,41 @@
             if (id != "tileEitht"){document.getElementById("tileEight").className = "hideTile";}
             if (id != "tileNine"){document.getElementById("tileNine").className = "hideTile";}
             if (id != "tileTen"){document.getElementById("tileTen").className = "hideTile";}
+        };
+
+        vm.popHideActivate = function () {
+
+            //This function takes all of the created POP menus by ID and applies their respective class to them.
+
+            document.getElementById("popContents").className = "popContents";
+            document.getElementById("popHide").className = "popHide";
+            document.getElementById("popHideEscape").className = "popHideEscape";
+
+            window.scrollTo(0, 0); // This sets the window position to the top so everything is neat and organized.
+
+            var htmlElement =  document.getElementsByTagName( 'html' )[0];
+            htmlElement.setAttribute( 'class', 'overflowOff' );
+
+        };
+        //This function hides the popContents window by changing its class
+        vm.popHideDeactivate = function () {
+
+            //This function takes all of the created POP menus by ID and applies their respective class to them.
+
+            document.getElementById("popContents").className = "popContentsOut";
+            document.getElementById("popHide").className = "popHideOut";
+            document.getElementById("popHideEscape").className = "popHideEscapeOut";
+            setTimeout(function () {
+                document.getElementById("popHide").className = "popEmpty";
+                document.getElementById("popHideEscape").className = "popEmpty";
+            }, 300);
+
+            window.scrollTo(0, 0); // This sets the window position to the top so everything is neat and organized.
+
+            var htmlElement =  document.getElementsByTagName( 'html' )[0];
+
+            htmlElement.setAttribute( 'class', 'overflowOn' );
+
         };
 
         vm.animateState = function(id, cssID, newClass, timeout) {

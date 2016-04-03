@@ -1132,3 +1132,52 @@ width: 100px;
     justify-content: center;
     margin-left: 11px;
 }
+
+.popFullCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4e8783;
+    width: 100%;
+    height: 100%;
+}
+
+.popTopCol {
+    margin-top: 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    width: 90%;
+    height: 390px;
+}
+
+.popBotCol {
+    margin-top: 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    width: 90%;
+    height: 252px;
+}
+
+.popMovieCont{
+    width: 300px;
+    height: 390px;
+    background-color: #1B5E20;
+}
+
+.popDetailsCont {
+    margin-left: 23px;
+    width: 436px;
+    height: 390px;
+}
+
+.customDimensionsOne {
+    width: 432px;
+    height: 390px;
+}
+
+.customDimensionsTwo {
+    width: 770px;
+    height: 252px;
+}

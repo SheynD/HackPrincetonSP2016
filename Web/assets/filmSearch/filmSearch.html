@@ -5,39 +5,89 @@
     <title>Title</title>
 </head>
 <body>
+
+<div id="popHide" class="popEmpty">
+    <div id="popContents" class="popEmpty">
+
+        <div id="popHideEscape" class="popEmpty" ng-click="filmSearch.popHideDeactivate();"><i
+                class="fa fa-times-circle-o"></i></div>
+
+        <div class="popFullCont">
+            <div class="popTopCol">
+                <div class="popMovieCont"><img src="assets/images/theRoom.jpg"></div>
+                <div class="popDetailsCont">
+                    <div class="panel panel-default customDimensionsOne">
+                        <div class="panel-heading">
+                            <h3 class="panel-title profilePanelTitleText"><span class="glyphicon glyphicon-eye-open"
+                                                                                aria-hidden="true"></span>
+                                &nbsp&nbspFilm Details</h3>
+                        </div>
+                        <div class="panel-body profilePanelBody" style="padding-top: 0;">
+                            <div id="currentlyWatchingMoviesContainer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popBotCol">
+                <div class="panel panel-default customDimensionsTwo">
+                    <div class="panel-heading">
+                        <h3 class="panel-title profilePanelTitleText"><span class="glyphicon glyphicon-eye-open"
+                                                                            aria-hidden="true"></span>
+                            &nbsp&nbspPlot Synopsis</h3>
+                    </div>
+                    <div class="panel-body profilePanelBody" style="padding-top: 0;">
+                        <div id="currentlyWatchingMoviesContainer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+
+
 <div class="container" style="height: 100%">
-<div style="margin: auto; width: 60%; text-align: center; margin-top: 35px; width: 50% ; height: 80px">
-    	<form>
-    		<div class="input-group">
-  				<span class="input-group-addon glyphicon glyphicon-search" id="searchInput" aria-hidden="true"></span>
-  				<input type="text" class="form-control" placeholder="Search" aria-describedby="searchInput">
-			</div>
-  			<div class="checkbox">
-    		<label class="radio-inline">
-  				<input type="radio" name="searchOptions" id="searchRadio1" value="title"> Title
-			</label>
-			<label class="radio-inline">
-  				<input type="radio" name="searchOptions" id="searchRadio2" value="actor"> Actor
-			</label>
-			<label class="radio-inline">
-  				<input type="radio" name="searchOptions" id="searchRadio3" value="director"> Director
-			</label>
-			<label class="radio-inline">
-  				<input type="radio" name="searchOptions" id="searchRadio3" value="genre"> Genre
-			</label>
-			<label class="radio-inline">
-  				<input type="radio" name="searchOptions" id="searchRadio3" value="production"> Production
-			</label>
-  		</div>
-  		</form>
-</div>
-<div id="searchResultsContainer">
-	<div class="movieTile {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in filmSearch.tiles" ng-click="filmSearch.animateState(tile.state, tile.id, 'tileOut', 600); filmSearch.hideTiles(tile.id);" style="background-image: url('{{tile.icon}}')">
-		<div class="movieTileText">
-			<p>{{tile.name}}</p>
-		</div>
-	</div>
-</div>
+    <div style="margin: auto; width: 60%; text-align: center; margin-top: 35px; width: 50% ; height: 80px">
+        <form>
+            <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-search" id="searchInput"
+                          aria-hidden="true"></span>
+                <input type="text" class="form-control" placeholder="Search" aria-describedby="searchInput">
+            </div>
+            <div class="checkbox">
+                <label class="radio-inline">
+                    <input type="radio" name="searchOptions" id="searchRadio1" value="title"> Title
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="searchOptions" id="searchRadio2" value="actor"> Actor
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="searchOptions" id="searchRadio3" value="director"> Director
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="searchOptions" id="searchRadio3" value="genre"> Genre
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="searchOptions" id="searchRadio3" value="production"> Production
+                </label>
+            </div>
+        </form>
+    </div>
+    <div id="searchResultsContainer">
+        <div class="movieTile {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in filmSearch.tiles"
+             ng-click="filmSearch.popHideActivate(movieId);" style="background-image: url('{{tile.icon}}')">
+            <div class="movieTileText">
+                <p>{{tile.name}}</p>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
