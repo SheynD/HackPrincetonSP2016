@@ -40,7 +40,11 @@ html {
 body {
     line-height: 1;
     font-size: 12px;
-    background-color: #E8F5E9;
+    width: 100%;
+    height: 100%;
+    /*background-color: #DDFFF8;*/
+    background-image: url('../images/train.jpg');
+    background-size: 100%;
     list-style-type: none;
 }
 
@@ -86,7 +90,8 @@ li {
 }
 
 /*For table row selection background-color MUST be important to override tr defaults*/
-.emptyRow{
+
+.trans{
 
 }
 
@@ -108,13 +113,13 @@ li {
 
 .overflowOff {
     -webkit-font-smoothing: antialiased;
-    background-color: #E8F5E9;
+    background-color: #DDFFF8;
     overflow: hidden;
 }
 
 .overflowOn {
     -webkit-font-smoothing: antialiased;
-    background-color: #E8F5E9;
+    background-color: #DDFFF8;
 }
 
 /* This stuff needs to be organized, everything should be re-usable and easily identifiable */
@@ -171,7 +176,7 @@ li {
 
     background-color: #4E8783;
     font-size: 30px;
-    color: #E8F5E9;
+    color: #DDFFF8;
 
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -361,6 +366,10 @@ li {
 
 }
 
+.trans{
+    background-color: rgba(221,255,248,0.9);
+}
+
 .inquiryContainer {
     background-color: white;
 }
@@ -368,7 +377,7 @@ li {
 .inquiryDebitCreditTitle{
 width: 100px;
     height: 20px;
-    background-color: #0000BB;
+    background-color: rgba(0,0,255,0.95);
 }
 
 .summaryText {
@@ -434,7 +443,7 @@ width: 100px;
 
 .tile {
     position: relative;
-    opacity: 0;
+    opacity: 1;
     transition: 0.3s ease-in-out;
     background-color: #4e8783;
     height: 210px;
