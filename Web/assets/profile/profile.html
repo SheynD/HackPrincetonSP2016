@@ -6,25 +6,90 @@
 </head>
 <body>
 
-<div class="container" style="height: 100%">
+<div class="container" style="height: 100%;">
     <div class="panel-profile">
-        <div class="profile-bar" style="width: 30%">
-            <div class="panel-body">
-            <div class="profile-picture"></div>
+        <div class="profileSideBar col-sm-4" style="padding-left: 0; padding-right: 0;">
+            <div class="profile-picture" style="background-image: url('{{profile.profile.profilePicture}}')"></div>
+            <div class="profileMainBox">
+                <span class="profileNameText">{{profile.profile.name}}</span>
+                <br>
+                <span class="profileAddressText">Pennsylvania, USA</span>
+            </div>
+            <div class="profileBox">
+                <br>
+                <span class="glyphicon glyphicon-user profileBoxGlyph" aria-hidden="true"></span>
+                <br>
+                <span class="profileBoxText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+                <br><br>
+                <span class="glyphicon glyphicon-phone-alt profileBoxGlyph" aria-hidden="true"></span>
+                <br>
+                <span class="profileBoxText"> 267-001-9234
+                </span>
+                <br><br>
+                <span class="glyphicon glyphicon-envelope profileBoxGlyph" aria-hidden="true"></span>
+                <br>
+                <span class="profileBoxText"> jdoe@gmail.com </span>
+                </span>
             </div>
         </div>
-    </div>
-</div>
-<div class="hailMary">
-    <div class="profileContainer">
+        <div class="profilePanel col-sm-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title profilePanelTitleText"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+                    &nbsp&nbspWatched Movies</h3>
+                </div>
+                <div class="panel-body profilePanelBody" style="padding-top: 0;">
+                    <div id="watchedMoviesContainer">
+                        <div class="movieTileSmall {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in profile.watchedTiles" ng-click="profile.animateState(tile.state, tile.id, 'tileOut', 600); profile.hideWatchedTiles(tile.id);" style="background-image: url('{{tile.icon}}')">
+                            <div class="movieTileSmallText">
+                                <p>{{tile.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title profilePanelTitleText"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                    &nbsp&nbspWishList</h3>
+                </div>
+                <div class="panel-body profilePanelBody" style="padding-top: 0;">
+                    <div id="wishedListMoviesContainer">
+                        <div class="movieTileSmall {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in profile.wishedListTiles" ng-click="profile.animateState(tile.state, tile.id, 'tileOut', 600); profile.hideWatchedTiles(tile.id);" style="background-image: url('{{tile.icon}}')">
+                            <div class="movieTileSmallText">
+                                <p>{{tile.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title profilePanelTitleText"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    &nbsp&nbspCurrently Watching</h3>
+                </div>
+               <div class="panel-body profilePanelBody" style="padding-top: 0;">
+                    <div id="currentlyWatchingMoviesContainer">
+                        <div class="movieTileSmall {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in profile.currentlyWatchingTiles" ng-click="profile.animateState(tile.state, tile.id, 'tileOut', 600); profile.hideWatchedTiles(tile.id);" style="background-image: url('{{tile.icon}}')">
+                            <div class="movieTileSmallText">
+                                <p>{{tile.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title profilePanelTitleText"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+                    &nbsp&nbspStatistics</h3>
+                </div>
+                <div class="panel-body">
+                    <img src="assets/images/graphs.png" class="img-responsive" alt="Responsive image">
+                </div>
+            </div>
 
-        
-
-        <div class="profileText">
-            <div>Sheyn Denizov</div>
-            <div>USA, Pennsylvania</div>
         </div>
-
     </div>
 </div>
 
