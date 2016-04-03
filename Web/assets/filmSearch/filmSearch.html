@@ -32,9 +32,7 @@
   		</form>
 </div>
 <div id="searchResultsContainer">
-	<div class="movieTile {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in filmSearch.tiles" ng-click="filmSearch.animateState(tile.state, tile.id, 'tileOut', 600); filmSearch.hideTiles(tile.id);">
-		<div class="movieTileIcon">
-		</div>
+	<div class="movieTile {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in filmSearch.tiles" ng-click="filmSearch.animateState(tile.state, tile.id, 'tileOut', 600); filmSearch.hideTiles(tile.id);" style="background-image: url('{{tile.icon}}')">
 		<div class="movieTileText">
 			<p>{{tile.name}}</p>
 		</div>

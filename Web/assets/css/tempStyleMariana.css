@@ -5,6 +5,10 @@
 	height: 100px
 }
 
+.top-logo {
+  height: 28px
+}
+
 .login {
 	background: red; /* For browsers that do not support gradients */
   	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
