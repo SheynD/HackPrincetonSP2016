@@ -1077,8 +1077,7 @@ width: 100px;
     top: 40px;
     width: 200px;
     height: 200px;
-    background-color: #1B5E20;
-    border-radius: 400px;
+    border-radius: 500px;
     -webkit-box-shadow: 2px 12px 39px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 12px 39px -7px rgba(0,0,0,0.75);
     box-shadow: 2px 12px 39px -7px rgba(0,0,0,0.75);
@@ -1092,7 +1091,4 @@ width: 100px;
     opacity: 0.8;
 }
 
-.profileText{
-text-align: center;
-    color: white;
-}
+

@@ -51,3 +51,29 @@
     height: 100%;
     overflow: auto;
 }
+
+.panel-profile {
+    margin: auto; 
+    width: 60%;
+    margin-top: 35px; 
+    height: 93%; 
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.profile-bar {
+    width: 40%; 
+    height: 100%; 
+    background-color: red;
+    border-radius: 10px;
+}
+
+.profile-picture {
+    background-image: url('{{profile.profile.profilePicture}}');
+    width: 100%;
+}
+
+.profileText{
+  text-align: center;
+  color: white;
+}
