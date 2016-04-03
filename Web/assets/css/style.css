@@ -1025,13 +1025,12 @@ width: 100px;
     align-items: center;
     justify-content: center;
     color: #b3d6b5;
-    width: 25px;
-    opacity: 0.8;
+    height: 87%;
+    opacity: 0.9;
     image-rendering: crisp-edges;
-    height: 25px;
     border-radius: 150px;
-    background-color: #215524;
-    -webkit-border-radius: 150px;
+    -webkit-border-radius: 200px;
+    margin-left: 6px;
     -moz-border-radius: 150px;
 }
 
@@ -1104,4 +1103,25 @@ width: 100px;
     opacity: 0.8;
 }
 
+.friendRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 61px;
+    margin-top: 10px;
+    border-radius: 27px;
+    background-color: #4e8783;
+}
 
+.friendText {
+    font-size: 18px;
+    margin-left: 12px;
+    color: white;
+    font-family: Josefin Sans;
+}
+
+.friendHighlight{
+    background-color: #0b3752;
+    border-radius: 10px;
+}

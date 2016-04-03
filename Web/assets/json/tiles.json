@@ -29,6 +29,12 @@
       "state": "watching",
       "icon": "fa fa-eye",
       "id": "tileFive"
+    },
+    {
+      "name": "My Account",
+      "state": "userProfile",
+      "icon": "fa fa-user",
+      "id": "tileSix"
     }
   ]
 }

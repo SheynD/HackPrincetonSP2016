@@ -16,6 +16,20 @@
 
         console.log("Controller Loaded [friends.js]");
 
+        UserService.getData('assets/friends/friends.json').then(
+            function(resolve){
+                //success
+                vm.friendList = resolve.friendList;
+                console.log("loaded friendList");
+            },
+            function(reject){
+                //failure
+                console.log("Failed to load friendList :(");
+            }
+        );
+
+
+
         vm.animateState = function(id, cssID, newClass, timeout) {
             UserService.animateState(id, cssID, newClass, timeout);
         };
