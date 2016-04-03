@@ -42,6 +42,13 @@
                 controllerAs: 'login'
             })
 
+            .state('friends', {
+                url: '/login',
+                templateUrl: 'assets/friends/friends.html',
+                controller: 'Friends',
+                controllerAs: 'friends'
+            })
+
 
     }
 })();

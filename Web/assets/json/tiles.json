@@ -9,25 +9,25 @@
     {
       "name": "Friends",
       "state": "friends",
-      "icon": "fa fa-plane",
+      "icon": "fa fa-users",
       "id": "tileTwo"
     },
     {
       "name": "Wishlist",
       "state": "authorization",
-      "icon": "fa fa-lock",
+      "icon": "fa fa-gift",
       "id": "tileThree"
     },
     {
       "name": "Watched Movies",
       "state": "admin",
-      "icon": "fa fa-cogs",
+      "icon": "fa fa-television",
       "id": "tileFour"
     },
     {
-      "name": "Inquiry",
+      "name": "Currently Watching",
       "state": "inquiry",
-      "icon": "fa fa-pencil-square-o",
+      "icon": "fa fa-eye",
       "id": "tileFive"
     }
   ]
