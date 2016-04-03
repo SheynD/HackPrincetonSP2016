@@ -491,6 +491,8 @@ width: 100px;
     justify-content: flex-end;
     align-items: center;
     bottom: 0;
+    padding-right: 18px;
+    padding-top: 10px;
 }
 
 .tile:hover {
