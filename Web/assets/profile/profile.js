@@ -15,7 +15,7 @@
         var vm = this;
 
         console.log("Controller Loaded [profile.js]");
-        /*
+        
         UserService.getData('assets/json/sampleFilms.json').then(
             function(resolve){
                 //success
@@ -52,34 +52,11 @@
             }
         );
 
-        vm.FBGetProfile = function (id) {
-            FB.api( "/" + id, function (response) {
-                if (response && !response.error) {
-                    /* handle the result 
-        
-                }
-            })
-        };
-        */
-
-
-
         vm.getProfile = function () {
-            FB.login(function(response) {
-                if(response.authResponse) {
-                    console.log('Welcome! Fetching your information....');
-                    FB.api('/' + userId, function(response) {
-                        document.getElementById("profileNameText").innerHTML = response.name;
-                        document.getElementById("profilePicture").innerHTML = response.name;
-                    });
-                }
-                else {
-                    console.log('User cancelled login or did not fully authorize.');
-                }
+            FB.api('/10153525375348317', function(response) {
+                document.getElementById("profileNameText").innerHTML = response.name;
             });
         };
-
-        vm.getProfile();
 
 
         vm.hideTiles = function (id) {
