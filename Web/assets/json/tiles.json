@@ -14,19 +14,19 @@
     },
     {
       "name": "Wishlist",
-      "state": "authorization",
+      "state": "wishlist",
       "icon": "fa fa-gift",
       "id": "tileThree"
     },
     {
       "name": "Watched Movies",
-      "state": "admin",
+      "state": "watched",
       "icon": "fa fa-television",
       "id": "tileFour"
     },
     {
       "name": "Currently Watching",
-      "state": "inquiry",
+      "state": "watching",
       "icon": "fa fa-eye",
       "id": "tileFive"
     }

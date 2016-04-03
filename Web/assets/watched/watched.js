@@ -6,15 +6,15 @@
 
     angular
         .module('myApp')
-        .controller('Friends', ['UserService', Friends]);
+        .controller('Watched', ['UserService', Watched]);
 
-    Friends.$inject =  ['UserService'];
+    Watched.$inject =  ['UserService'];
 
-    function Friends(UserService) {
+    function Watched(UserService) {
 
         var vm = this;
 
-        console.log("Controller Loaded [friends.js]");
+        console.log("Controller Loaded [watched.js]");
 
         vm.animateState = function(id, cssID, newClass, timeout) {
             UserService.animateState(id, cssID, newClass, timeout);

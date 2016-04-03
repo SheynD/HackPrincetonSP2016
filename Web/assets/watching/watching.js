@@ -6,15 +6,15 @@
 
     angular
         .module('myApp')
-        .controller('Friends', ['UserService', Friends]);
+        .controller('Wishlist', ['UserService', Wishlist]);
 
-    Friends.$inject =  ['UserService'];
+    Wishlist.$inject =  ['UserService'];
 
-    function Friends(UserService) {
+    function Wishlist(UserService) {
 
         var vm = this;
 
-        console.log("Controller Loaded [friends.js]");
+        console.log("Controller Loaded [wishlist.js]");
 
         vm.animateState = function(id, cssID, newClass, timeout) {
             UserService.animateState(id, cssID, newClass, timeout);

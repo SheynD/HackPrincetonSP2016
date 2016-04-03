@@ -43,10 +43,31 @@
             })
 
             .state('friends', {
-                url: '/login',
+                url: '/friends',
                 templateUrl: 'assets/friends/friends.html',
                 controller: 'Friends',
                 controllerAs: 'friends'
+            })
+
+            .state('wishlist', {
+                url: '/wishlist',
+                templateUrl: 'assets/wishlist/wishlist.html',
+                controller: 'Wishlist',
+                controllerAs: 'wishlist'
+            })
+
+            .state('watched', {
+                url: '/watched',
+                templateUrl: 'assets/watched/watched.html',
+                controller: 'Watched',
+                controllerAs: 'watched'
+            })
+
+            .state('watching', {
+                url: '/watching',
+                templateUrl: 'assets/watching/watching.html',
+                controller: 'Watching',
+                controllerAs: 'watching'
             })
 
 
