@@ -1,112 +1,148 @@
 {
   "icons": [
     {
-      "name": "Film 1",
+      "name": "The Room",
       "state": "filmSearch",
       "icon": "assets/images/theRoom.jpg",
-      "id": "tileOne"
+      "id": "tileSix"
     },
     {
-      "name": "Film 2",
+      "name": "Assassin",
       "state": "friends",
-      "icon": "assets/images/sheyn.png",
-      "id": "tileTwo"
+      "icon": "assets/images/Assassin.jpg",
+      "id": "tileSix"
     },
     {
-      "name": "Film 3",
-      "state": "authorization",
-      "icon": "fa fa-lock",
-      "id": "tileThree"
-    },
-    {
-      "name": "Film 4",
+      "name": "Black Swan",
       "state": "admin",
-      "icon": "fa fa-cogs",
-      "id": "tileFour"
+      "icon": "assets/images/blackswan.jpeg",
+      "id": "tileSix"
     },
     {
-      "name": "Film 5",
+      "name": "The Grand Budapest Hotel",
+      "state": "admin",
+      "icon": "assets/images/tgbh.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Silence of The Lambs",
       "state": "inquiry",
-      "icon": "fa fa-pencil-square-o",
-      "id": "tileFive"
-    },
-    {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
+      "icon": "assets/images/postersilence.jpg",
       "id": "tileSix"
     },
     {
-      "name": "Film 6",
+      "name": "Titanic",
       "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
-      "id": "tileSix"
-    },
-        {
-      "name": "Film 6",
-      "state": "filmSearch",
-      "icon": "fa fa-search",
+      "icon": "assets/images/titanicPoster.jpg",
       "id": "tileSix"
     },
     {
-      "name": "Film 10",
+      "name": "The Avengers",
+      "state": "authorization",
+      "icon": "assets/images/avengers-movie-poster-1.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Ides Of March",
+      "state": "admin",
+      "icon": "assets/images/the-ides-of-march.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Silence of The Lambs",
       "state": "inquiry",
-      "icon": "fa fa-pencil-square-o",
-      "id": "tileTen"
+      "icon": "assets/images/postersilence.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "Titanic",
+      "state": "filmSearch",
+      "icon": "assets/images/titanicPoster.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "Assassin",
+      "state": "friends",
+      "icon": "assets/images/Assassin.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Avengers",
+      "state": "authorization",
+      "icon": "assets/images/avengers-movie-poster-1.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Ides Of March",
+      "state": "admin",
+      "icon": "assets/images/the-ides-of-march.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "Titanic",
+      "state": "filmSearch",
+      "icon": "assets/images/titanicPoster.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Room",
+      "state": "filmSearch",
+      "icon": "assets/images/theRoom.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "Assassin",
+      "state": "friends",
+      "icon": "assets/images/Assassin.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Avengers",
+      "state": "authorization",
+      "icon": "assets/images/avengers-movie-poster-1.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Ides Of March",
+      "state": "admin",
+      "icon": "assets/images/the-ides-of-march.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "Titanic",
+      "state": "filmSearch",
+      "icon": "assets/images/titanicPoster.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Room",
+      "state": "filmSearch",
+      "icon": "assets/images/theRoom.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Avengers",
+      "state": "authorization",
+      "icon": "assets/images/avengers-movie-poster-1.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Ides Of March",
+      "state": "admin",
+      "icon": "assets/images/the-ides-of-march.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "The Silence of The Lambs",
+      "state": "inquiry",
+      "icon": "assets/images/postersilence.jpg",
+      "id": "tileSix"
+    },
+    {
+      "name": "Titanic",
+      "state": "filmSearch",
+      "icon": "assets/images/titanicPoster.jpg",
+      "id": "tileSix"
     }
   ]
 }
