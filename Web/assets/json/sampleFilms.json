@@ -1,0 +1,112 @@
+{
+  "icons": [
+    {
+      "name": "Film 1",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileOne"
+    },
+    {
+      "name": "Film 2",
+      "state": "friends",
+      "icon": "fa fa-plane",
+      "id": "tileTwo"
+    },
+    {
+      "name": "Film 3",
+      "state": "authorization",
+      "icon": "fa fa-lock",
+      "id": "tileThree"
+    },
+    {
+      "name": "Film 4",
+      "state": "admin",
+      "icon": "fa fa-cogs",
+      "id": "tileFour"
+    },
+    {
+      "name": "Film 5",
+      "state": "inquiry",
+      "icon": "fa fa-pencil-square-o",
+      "id": "tileFive"
+    },
+    {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+    {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+        {
+      "name": "Film 6",
+      "state": "filmSearch",
+      "icon": "fa fa-search",
+      "id": "tileSix"
+    },
+    {
+      "name": "Film 10",
+      "state": "inquiry",
+      "icon": "fa fa-pencil-square-o",
+      "id": "tileTen"
+    }
+  ]
+}

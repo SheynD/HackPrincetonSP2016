@@ -5,9 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-<div class="container" style="margin-top: 50px">
-<div class="jumbotron">
-  <h1 class="subtitle-text"> Film Search </h1>
+<div class="container" style="height: 100%">
+<div style="margin: auto; width: 60%; text-align: center; margin-top: 70px; width: 50% ; height: 80px">
     	<form>
     		<div class="input-group">
   				<span class="input-group-addon glyphicon glyphicon-search" id="searchInput" aria-hidden="true"></span>
@@ -31,6 +30,16 @@
 			</label>
   		</div>
   		</form>
+</div>
+<div id="searchResultsContainer">
+	<div class="tile {{tile.id}}" id="{{tile.id}}" ng-repeat="tile in filmSearch.tiles" ng-click="filmSearch.animateState(tile.state, tile.id, 'tileOut', 600); filmSearch.hideTiles(tile.id);">
+		<div class="tileIcon">
+			<i class="{{tile.icon}}"></i>
+		</div>
+		<div class="tileText">
+			<p>{{tile.name}}</p>
+		</div>
+	</div>
 </div>
 </div>
 </body>
