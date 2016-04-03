@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>User Profile</title>
 </head>
 <body>
-
 <div class="container" style="height: 100%;">
     <div class="panel-profile">
         <div class="profileSideBar col-sm-4" style="padding-left: 0; padding-right: 0;">
-            <div class="profile-picture" style="background-image: url('{{profile.profile.profilePicture}}')"></div>
+            <div class="profile-picture" style="background-image: url('http://graph.facebook.com/' + userId + '/picture')"></div>
             <div class="profileMainBox">
-                <span class="profileNameText">{{profile.profile.name}}</span>
+                <span class="profileNameText" id="profileNameText"></span>
                 <br>
                 <span class="profileAddressText">Pennsylvania, USA</span>
             </div>
@@ -88,7 +87,7 @@
                     <img src="assets/images/graphs.png" class="img-responsive" alt="Responsive image">
                 </div>
             </div>
-
+            <button type="button" class="btn btn-primary btn-lg" ng-click="profile.getProfile()">Log In With Facebook</button>
         </div>
     </div>
 </div>

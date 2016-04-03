@@ -15,19 +15,7 @@
         var vm = this;
 
         console.log("Controller Loaded [profile.js]");
-
-        UserService.getData('assets/profile/profile.json').then(
-            function(resolve){
-                //success
-                vm.profile = resolve.profile[0];
-                console.log("loaded profile picture");
-            },
-            function(reject){
-                //failure
-                console.log("Failed to load tile icons :(");
-            }
-        );
-
+        /*
         UserService.getData('assets/json/sampleFilms.json').then(
             function(resolve){
                 //success
@@ -63,6 +51,36 @@
                 console.log("Currently Watching List Failed to load tile icons :(");
             }
         );
+
+        vm.FBGetProfile = function (id) {
+            FB.api( "/" + id, function (response) {
+                if (response && !response.error) {
+                    /* handle the result 
+        
+                }
+            })
+        };
+        */
+
+
+
+        vm.getProfile = function () {
+            FB.login(function(response) {
+                if(response.authResponse) {
+                    console.log('Welcome! Fetching your information....');
+                    FB.api('/' + userId, function(response) {
+                        document.getElementById("profileNameText").innerHTML = response.name;
+                        document.getElementById("profilePicture").innerHTML = response.name;
+                    });
+                }
+                else {
+                    console.log('User cancelled login or did not fully authorize.');
+                }
+            });
+        };
+
+        vm.getProfile();
+
 
         vm.hideTiles = function (id) {
 

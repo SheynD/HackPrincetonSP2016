@@ -16,7 +16,6 @@
 
         console.log("Controller Loaded [login.js]");
 
-
         vm.animateState = function(id, cssID, newClass, timeout) {
             UserService.animateState(id, cssID, newClass, timeout);
         };
