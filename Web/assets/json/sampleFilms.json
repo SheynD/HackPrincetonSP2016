@@ -3,7 +3,7 @@
     {
       "name": "Film 1",
       "state": "filmSearch",
-      "icon": "fa fa-search",
+      "icon": "assets/images/theRoom.jpg",
       "id": "tileOne"
     },
     {
