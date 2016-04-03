@@ -5,26 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+
+
+
+
 <div class="container" style="height: 100%">
-<div style="margin: auto; width: 60%; text-align: center; margin-top: 70px; width: 50% ; height: 80px">
+    <div style="margin: auto; width: 60%; text-align: center; margin-top: 70px; width: 50% ; height: 80px">
 
-</div>
-<div id="searchResultsContainer">
-	<div class="friendRow" ng-repeat="friends in friends.friendList">
-
-
-
-		<div class="profileIcon"><img src="{{friends.profilePicture}}" class="profileIcon" ng-click="mainMenu.animateState('userProfile', 'toolbarContainer', 'hideTile', 0);"
-		alt="{{friends.name}}"></div>
+    </div>
+    <div id="searchResultsContainer" ng-click="friends.animateState('userProfile', 'searchResultsContainer', 'routingAnimation', 0);">
+        <div class="friendRow" ng-repeat="friends in friends.friendList">
 
 
+            <div class="profileIcon"><img src="{{friends.profilePicture}}" class="profileIcon" alt="{{friends.name}}"></div>
 
 
-		<div class="friendHighlight">
-		<div class="friendText"><span>{{friends.name}}</span></div>
-		</div>
-	</div>
-</div>
+            <div class="friendHighlight">
+                <div class="friendText"><span>{{friends.name}}</span></div>
+            </div>
+
+            <div class="friendHighlight">
+                <div class="friendText"><span>Movies Watched <i class="fa fa-television"></i>({{friends.moviesWatched.length}})</span></div>
+            </div>
+            <div class="friendHighlight">
+                <div class="friendText"><span>Wishlist <i class="fa fa-gift"></i>({{friends.directorsFlagged.length}})</span></div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

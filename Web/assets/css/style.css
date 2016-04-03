@@ -1116,12 +1116,19 @@ width: 100px;
 
 .friendText {
     font-size: 18px;
-    margin-left: 12px;
-    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    /* margin-left: 0px; */
+    color: rgba(255, 255, 255, 0.75);
     font-family: Josefin Sans;
 }
 
-.friendHighlight{
-    background-color: #0b3752;
-    border-radius: 10px;
+.friendHighlight {
+    background-color: rgba(11, 72, 82, 0.72);
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11px;
 }
